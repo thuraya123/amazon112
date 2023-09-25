@@ -1,0 +1,14 @@
+<!-- created by Maya -->
+
+<h1>Company Profile</h1>
+<img src="{{ user.profile_picture.url }}" alt="Profile Picture">
+<p>Username: {{ user.username }}</p>
+<!-- Add other common user fields here -->
+
+{% if user.is_company %}
+  <p>Company Name: {{ user.company_name }}</p>
+  <p>Location: {{ user.location }}</p>
+  {% if user.is_verified %}
+    <p>Verified Company</p>
+  {% endif %}
+{% endif %}
