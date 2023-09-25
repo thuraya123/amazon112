@@ -30,6 +30,12 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+AUTH_USER_MODEL = [ # this was added by Maya
+    'your_app.User'
+]
+
+# Application definition
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
