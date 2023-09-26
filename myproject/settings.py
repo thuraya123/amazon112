@@ -30,10 +30,6 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-
-
-# Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -131,10 +127,7 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'myapp.CustomUser'
-AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend',
-     'allauth.account.auth_backends.AuthenticationBackend',
-)
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'  # Replace with your SMTP server
 EMAIL_PORT = 587  # Replace with the appropriate port
@@ -143,7 +136,7 @@ EMAIL_HOST_USER = 'forwardmeals@gmail.com'  # Replace with your email address
 EMAIL_HOST_PASSWORD = 'Forwardmeals20'  # Replace with your email password
 
 
-AUTH_USER_MODEL = 'myapp.CustomUser'  # Replace 'yourapp' with your app's name
+
 
 LOGIN_REDIRECT_URL = '/home/'  # Replace with your desired redirect URL
 LOGOUT_REDIRECT_URL = '/home/'
