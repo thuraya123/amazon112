@@ -1,0 +1,33 @@
+h1 {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    font-family: 'Lato', sans-serif;
+}
+
+p.verified {
+    font-weight: bold;
+    color: green;
+    font-family: 'Lato', sans-serif;
+}
+
+p.verified::after { /* adding checkmark next to verified company */
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('checkmark.png');
+    background-size: cover; /* Adjust to control the size of the image */
+    margin-right: 5px;
+}

@@ -1,5 +1,15 @@
 <!-- created by Maya -->
 
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'profiles.css' %}">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    </style>
+</head>
+<body>
 <h1>Regular User Profile</h1>
 <img src="{{ user.profile_picture.url }}" alt="Profile Picture">
 <p>Username: {{ user.username }}</p>
@@ -16,3 +26,6 @@
   {% endif %}
 {% endif %}
 -->
+
+</body>
+</html>
